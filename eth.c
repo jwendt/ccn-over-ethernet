@@ -61,7 +61,7 @@ int main(){
 	/*send the packet*/
 	send_result = sendto(s, buffer, ETH_FRAME_LEN, 0, (struct sockaddr*)&socket_address, sizeof(socket_address));
 	if (send_result == -1) {
-		printf("error!\n");
+		printf("error when sending packet!\n");
 	}
 
 
